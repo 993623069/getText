@@ -1,0 +1,25 @@
+﻿{
+  "name": "g-emall",
+  "description" : "g-emall",
+  "version": "1.0",
+  "background" : {
+		"scripts" : ["jquery.min.js", "background.js"]
+	},
+  "content_scripts": [
+    {
+	  "all_frames": true,
+      "matches": ["https://ec.ef.com.cn/*"],
+      "js": ["jquery.min.js","script.js"]
+    }
+  ],
+  	"icons" : {
+		"16" : "1.png",
+		"48" : "1.png",
+		"128" : "1.png"
+	},
+	"browser_action": {
+       "default_icon": "1.png"
+  },
+  	"permissions": [ "proxy", "tabs", "webRequest", "webRequestBlocking", "storage", "tabs", "http://*/*", "https://*/*", "\u003Call_urls>" ],
+    "manifest_version" : 2
+}

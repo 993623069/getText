@@ -1,0 +1,2 @@
+"# chromePlugins" 
+# EfVedioCopyPlugins
